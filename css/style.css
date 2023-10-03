@@ -10,10 +10,10 @@ body{
     margin: 0px;
 }
 /*index*/
-div#textop h1{
-    position: relative;
-    padding: 10px 400px 10px 500px;
-    font-size: 50px;
+#text-top{
+        position: relative;
+        padding: 10px 0px;
+        font-size: 50px;
 }
 
 /*fim de index*/
@@ -29,6 +29,10 @@ div#grow a:hover {
 }
 
 /*home*/
+/*cabeçalho*/
+#cabecalho{
+   display: block;
+}
 
 /*menu superior*/
 
@@ -59,55 +63,66 @@ div#menusup li {
     text-transform: uppercase;
     padding: 10px;
     border: 2px solid black;
-    background-color: ;
 }
 
 /*fim do menu superior*/
 
 /*menu lateral*/
+
+#cabecalho{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 10vw;
+}
+#text-top{
+    display: flex;
+    justify-content: center;
+}
+
 nav#menu1 {
     background-color: rgba(16, 16, 16, .5);
-    width: 250px;
-    right: 0px;
-    height: 50%;
-    position: absolute;
+    padding: 10px;
+
 }
 
+#menu-lateral{
+    display: flex;
+    justify-content: end;
+    padding-right: 67px;
+}
 
-div#menulat ul {
+div#menu-lateral ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     list-style: none;
-    top: 70px;
-    position: absolute;
-    width: 100%;
 }
 
-div#menulat a {
-    text-decoration: none;
+div#menu-lateral a {
     color: #cecece;
+    padding: 5px;
     display: block;
-    padding: 20px 5px;
-    text-align: center;
-    font-size: 20px;
+    font-size: 1.2em;
 }
 
-div#menulat a:hover {
-    background-color: rgb(176, 224, 230);
+div#menu-lateral a:hover {
+    background-color: rgb(85, 85, 85);
 }
 
-div#menulat label {
+div#menu-lateral label {
     background-color: #606060;
-    padding: 19px;
+    padding: 15px;
     position: absolute;
-    right:0px;
-    z-index: 1;
+    right: 10px;
     border: 2px solid black;
 }
 
-div#menulat input[type="checkbox"] {
+div#menu-lateral input[type="checkbox"] {
     display: none;
 }
 
-div#menulat input[type="checkbox"]:checked ~ nav {
+div#menu-lateral input[type="checkbox"]:checked ~ nav {
     visibility:hidden;
 }
 /*fim do menu lateral*/
@@ -177,9 +192,25 @@ div#destaque li {
     width: 200px;
     display: none;
 }
-
 /*fim de home*/
 
-div#rodape {
-    padding-top: 600px;
+#thunb{
+    margin: auto;
+    display: block;
+    width: 90vw;
+}
+
+#conteudo>p{
+    text-indent: 20px;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+footer{
+    background-color: #474747;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
 }
